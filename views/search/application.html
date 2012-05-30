@@ -1,0 +1,14 @@
+<script>
+    require([
+        'main',
+        'collections/alternatives'
+    ], function(main, alternativesCollection) {
+        alternativesCollection.reset(<%- alternatives %>);
+        main.start({ pushState: true, silent: true });
+    });
+</script>
+
+<section id="search">
+    <%- partial('../../public/templates/search', { name: name }) %>
+</section>
+<section id="alternatives"></section>

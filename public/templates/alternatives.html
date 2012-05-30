@@ -1,0 +1,24 @@
+<ul class="unstyled">
+    <% _.each(alternatives, function(alternative) { %>
+        <li class="list-row">
+            <input type="hidden" name="alternative.ID" value="<%= alternative.ID %>" />
+            <div class="row">
+                <div class="span12">
+                    <img src="<%= alternative.IconUrl %>" alt="<%= alternative.Name %>" />
+                    <strong><%= alternative.Name %></strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p><%= alternative.ShortDescription %> <a href="<%= alternative.Url %>" target="_blank">more</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3 offset9">
+                    <span class="label <%= alternative.LicenseLabel %>"><%= alternative.License %></span>
+                    <span class="badge"><%= alternative.Votes %></span>
+                </div>
+            </div>
+        </li>
+    <% }); %>
+</ul>

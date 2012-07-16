@@ -1,9 +1,23 @@
 {
-    "name": "AlternativeTo"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.8"
-    , "ejs": ">= 0.0.1"
-  }
+    "name": "AlternativeTo",
+    "description": "A minimalist frontend of alternativeto.net written with Node, Backbone and Bootstrap.",
+    "author": "Loïc Fontaine <ljph.fontaine@gmail.com>",
+    "version": "0.0.2",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lfont/AlternativeTo.git"
+    },
+    "dependencies": {
+        "express": "2.5.x",
+        "ejs": "0.0.x"
+    },
+    "devDependencies": { },
+    "optionalDependencies": { },
+    "engines": {
+        "node": "0.6.x"
+    },
+    "subdomain": "lfont.alternativeto",
+    "scripts": {
+        "start": "app.js"
+    }
 }

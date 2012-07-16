@@ -2,6 +2,7 @@ AlternativeTo
 =============
 
 A minimalist frontend of alternativeto.net written with Node, Backbone and Bootstrap.  
+Watch this application running at http://lfont.alternativeto.nodejitsu.com/  
 
 About Me
 --------

@@ -36,7 +36,7 @@ require('./route').register(app);
 
 // Start
 
-app.listen(process.env.C9_PORT, '0.0.0.0', function () {
+app.listen(process.env.PORT, process.env.IP, function () {
     console.log('Express server listening on port %d in %s mode',
         app.address().port, app.settings.env);
 });
